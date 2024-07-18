@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Practice</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+
+
+<body>
+    <div class="whole">
+<div class="second">
+    <div class="container">
+        <form action="" onsubmit="sub()">
+        <label for="uname" ><b>Username</b></label>
+        <input id="fname"  onfocus="fun(this)" type="text" placeholder="username" name="password" oninput="inputfu(this)" oninvalid="alert('Please Enter Correct Name')" required  >
+        <br><br>
+            
+        <label for="password"><b>Password</b></label>
+        <input id=""  onblur="fun(this)" onchange="change(this)" onselect="selectf()" type="password" placeholder="password" name="password">
+            <br><br>
+      
+      <label for="">
+      Country</label>
+        
+        <select id="" ondblclick="fun(this)" oninput="inputfu(this)" >
+            
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Austrila">Austrila</option>
+            <option value="Africa">Africa</option>
+            <option value="Newzland">Newzland</option>
+            <option value="Kenya">Kenya</option>
+            
+            </select>
+            <input type="submit">
+    
+        </form>
+    
+        <div id="test" style="border: 1px solid green; margin-top:20px;"></div>
+     </div>
+     </div>
+    
+    
+    
+    </div>
+    
+    <script>
+    function fun(elem)
+        {
+            elem.style.background="lime";
+        }
+        function inputfu(element)
+        {
+            var x=element.value;
+            document.getElementById("test").innerHTML=x;
+        }
+        
+    function change(elem)
+        {
+            var x=elem.value;
+            document.getElementById("test").innerHTML=x;
+        }
+        
+        function selectf()
+        {
+            
+            console.log("You Select a Text");
+        }
+        function sub()
+        {
+            alert("Submited Your form");
+            
+            confirm("Can you Submit other");
+        }
+    </script>
+    </body>
+</html>

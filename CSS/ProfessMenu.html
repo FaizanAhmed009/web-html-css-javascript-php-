@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<style>
+		
+ul #menu, ul#menu ul.sub-menu
+{
+padding: 0px;		
+margin:0px;
+margin-top:11px;
+}
+
+ul#menu li, ul.submenu li	
+{
+list-style-type: none;
+	float:left; 
+}
+ul#menu li a,ul.sub-menu li a
+{
+    text-decoration:none; 
+ 	color: crimson;
+	background:skyblue;
+	width:150px;
+	height: 40px;
+	display:block;
+	border-radius:20px;
+	text-align: center;
+	line-height: 40px;
+	}	
+ul#menu li a:hover,ul.sub-menu li a:hover
+{
+	text-decoration:none; 
+	color: darkslateblue;
+	background:black;
+	width:150px;
+	height: 40px;
+	display:inline-block;
+	border-radius:20px;
+	text-align:center;
+	line-height:40px;
+	}
+	ul#menu li{
+	position: relative;
+	} 
+	ul#menu li ul.sub-menu
+	{
+	display: none;
+	position: absolute;
+	top:30px;
+	left: 0;
+	width: 100px;
+	}
+	ul#menu li:hover ul.sub-menu
+		{
+			display: block; 
+		}
+	
+	a:hover
+		{
+	background:color:red;
+		}
+</style>	
+	
+<title>Menu Document</title>
+	
+	</head>
+
+<body>
+	
+	<ul id="menu">
+	<li>
+	<a href="#">Menu 1</a>
+		</li>
+		
+	<li><a href="#">Menu2</a>
+	<ul class="sub-menu">
+	<li>
+	<a href="#">Sub-Menu 1 </a>
+	</li>	
+	
+   <li>
+	<a href="2#">Sub-Menu 2 </a>
+	</li>	
+			
+   <li>
+		<a href="#">Sub-Menu 3 </a>
+		</li>	
+			
+   <li>
+		<a href="#">Sub-Menu 4 </a>
+		</li>	
+			
+	</ul>	
+		</li>
+		 
+		
+<li><a href="#">Gallery </a></li>
+<li><a href="#">Software </a>
+		
+<ul class="sub-menu">
+	<li>
+		<a href="#">Sub-Menu</a>
+		</li>	
+	<li>
+		<a href="#">Sub-Menu 2 </a>
+		</li>	
+			
+   <li>
+		<a href="#">Sub-Menu 3 </a>
+		</li>	
+			
+   <li>
+		<a href="#">Sub-Menu 4 </a>
+		</li>		</ul>
+	</li>		
+			
+	
+		
+	
+	
+	
+	
+</body>
+</html>
