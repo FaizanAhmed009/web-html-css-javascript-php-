@@ -1,0 +1,82 @@
+<html>
+<head>
+    
+    
+    </head>
+<body onresize="resizeFunction()">
+    <button onclick="reload()">Assign</button>
+    <button onclick="ref()">Ref</button>
+<button onclick="openWindow()">Open Window</button>
+<button onclick="moveWindow()">Move Window</button>
+<button onclick="closeWindow()">Close Window</button>
+<button onclick="sizeTo()">ResizeTo Window</button>
+<button onclick="sizeBy()">ResizeBy Window</button>
+
+    <div class="cl"><br><h1>Hello World</h1></div>
+ <script>
+        
+        function resizeFunction()
+        {
+            console.clear();
+    var inn=window.innerHeight;
+    console.log('The Inner Height of Window is : '+ inn);    
+    
+    var out=window.outerHeight;
+    console.log('The Outer Height of Window is : '+ out);    
+        
+    
+    var innW=window.innerWidth;
+    console.log('The Inner Width of Window is : '+ innW);    
+    
+    var outW=window.outerWidth;
+    console.log('The Outer Width of Window is : '+ outW);    
+        }
+        
+        // Open And Close Window
+        var win;
+        function openWindow()
+        {
+             win=window.open("","","height=800px,width=450px;")
+            win.document.write("<p> My First Window </p> ")
+        }
+        function closeWindow()
+        {
+            win.close();
+        }
+     function moveWindow()
+     {
+         window.moveTo(200,200);
+     }
+        
+      function sizeTo()
+     {
+         window.resizeTo(400,450);
+     }
+     
+     
+      function sizeBy()
+     {
+         window.resizeBy(400,450);
+     }
+     
+     function reload()
+     {
+         location.assign("https://www.google.com/");
+         
+     }
+     function ref()
+     {
+         location.href= "https://www.google.com/";
+     }
+     
+     var ele=document.getElementsByClassName("cl");
+     console.log(ele);
+     ele[0].classList.remove("clas");
+     
+     var arr=[23,'dsf',423,5434];
+     jso=JSON.stringify(arr);
+     console.log(jso);
+     
+    </script>
+</body>
+</html>

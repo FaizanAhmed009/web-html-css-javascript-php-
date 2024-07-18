@@ -1,0 +1,33 @@
+<html>
+<head>
+    
+    
+    
+    </head>
+
+    <body>
+    
+    <h1>Hello World</h1>
+    
+        <div id="test">
+        <p>Heloow kay haal hae theek o na.Khush o na.</p>
+        <h4>Kay</h4>
+        </div> 
+    
+    <script>
+        var creElement=document.createElement("h2");
+        var creText=document.createTextNode("This is Mine Website")
+        
+        creElement.append(creText);
+        
+        var g=document.getElementById("test").append(creElement);
+        console.log(g);
+        
+        var target=document.getElementById("test");
+        target.insertBefore(creElement,target.childNodes[1]);
+        
+        </script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Hello world</title>
+ 
+    
+    <script>
+    function java()
+        {
+            document.getElementById("gallery").color="orange";
+        }
+    
+    function java1()
+        {
+            document.getElementById("gallery").color="black";
+        }
+        
+    function java2()
+        {
+            document.getElementById("gallery").color="red";
+        }
+        
+    function java3()
+        {
+            document.getElementById("gallery").color="blue";
+        }
+    
+    
+    </script>
+    
+       </head>
+    <body onload="java2()">
+    
+    <input type="button" value="Orange" onClick="java()"> 
+        <button ondblClick="java1()">Black Colour</button>
+        <button onmouseout="java2()">Red Colour</button>
+        <button onmouseover="java3()">Blue Colour</button>
+        
+        <br />
+        <font id="gallery"> Welcome to java script </font>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GETTING STARTED WITH BRACKETS</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        
+
+    
+    
+    <script>
+    function java()
+        {
+            document.getElementById("gallery").src="images/1.jpg";
+        }
+    
+    function image1()
+        {
+            document.getElementById("gallery").src="images/2.jpg";
+        }
+        
+        
+        function image2()
+        {
+            document.getElementById("gallery").src="images/3.jpg";
+        }
+        
+       function image3()
+        {
+            document.getElementById("gallery").src="images/4.jpg";
+        }
+    
+    
+    </script>  </head>
+    
+    <body>
+        <table width="445" align="center">
+        
+        <tr>
+        <td align="center"><input type="button" value="images 1" onclick="java()"></td>
+            
+            
+         <td align="center"><input type="button" value="images 2" onclick="image1()"></td>
+            
+             
+         <td align="center"><input type="button" value="images 3" onclick="image2()"></td>
+            
+                     
+              
+        <td align="center"><input type="button" value="images 4" onclick="image3()"></td>
+            
+            
+            </tr>
+      </table>
+        
+        <table width="445" height="335" border="15" align="center" bordercolor="#00FFFF">
+        
+        <tr>
+ <td align="center"><img src="images/1.jpg" width="445" height="335" id="gallery"></td>
+          </tr>
+      </table>
+         </body>
+</html>

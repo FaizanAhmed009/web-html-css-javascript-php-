@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        #test{
+            width: 150px;
+            height: 200px;
+            background: aqua;
+        }
+    
+    
+    </style>
+    
+    </head>
+<body>
+    <div id="test"></div>
+    
+    <script>
+        var id=clearTimeout(timeou,800);
+        var a=0;
+        
+        
+        function An()
+        {
+            a=a+10;
+            if(a==500)
+              {
+               clearInterval(id);
+               }
+            else{
+                var target=document.getElementById("test").style.width=a+"px";
+            }
+        }
+        function timeou()
+        {
+            var ta=document.getElementById("test").style.width="500px";
+        }
+        
+        function stopAnimation()
+        {
+            clearTimeout(id);
+        }
+    
+    </script>
+    
+    </body>
+
+</html>

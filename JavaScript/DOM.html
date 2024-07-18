@@ -1,0 +1,297 @@
+    <script>
+     var element;
+        
+    
+    //get Functions
+        element=document.getElementById("banner").innerText;
+        element=document.querySelector(".banner").innerText;
+        element=document.querySelector(".banner").innerHTML;
+        element=document.querySelector(".banner").getAttribute("class");
+        element=document.querySelector(".banner").getAttributeNode("class");
+        element=document.querySelector(".banner").attributes;
+    //set Functions
+    
+        element=document.querySelector(".banner").innerHTML="<h1>Border</h1>";
+        element=document.querySelector(".banner").setAttribute("class","xys");
+        element=document.querySelector(".banner").attributes;
+        
+        // Css Functions
+        element=document.querySelector(".banner").style.border="4px solid green";
+        element=document.querySelector(".banner").style.backgroundColor="pink";
+        
+        element=document.querySelector("#banner").className="abc xys";
+        element=document.querySelector("#banner").className;
+        document.querySelector("#banner").classList="wyc abc xys";
+       element=document.querySelector("#banner").classList;
+        document.querySelector("#banner").classList.add="xys";
+       element=document.querySelector("#banner").classList;
+        document.querySelector("#banner").classList.remove="xys";
+       element=document.querySelector("#banner").classList;
+        
+        
+        //addEventFunctions
+        var element;
+        document.querySelector("#banner").addEventListener("click",abc);
+        document.querySelector("#banner").addEventListener("mouseenter",function()
+        {
+        this.style.backgroundColor="pink";                   });
+        
+        function abc()
+        {
+            document.querySelector("#banner").style.backgroundColor="green";
+        }
+        
+        //remove
+          
+        var element;
+        document.querySelector("#banner").addEventListener("click",abc);
+        document.querySelector("#banner").addEventListener("mouseenter",function()
+        {
+        this.style.backgroundColor="pink";                   });
+        
+        function abc()
+        {
+            document.querySelector("#banner").removeEventListener=("mouseenter",function);
+        }
+        
+        
+        
+        //class list addmethod
+        var element;
+        document.querySelector("#banner").addEventListener("click",abc);
+        
+        function abc()
+        {
+            document.querySelector("#banner").classList.add("xyx");
+            
+            var e=document.querySelector("#banner").classList;
+            console.log(e);
+        }
+        
+        
+        //classList removeMethod
+        
+        var element;
+        document.querySelector("#banner").addEventListener("click",abc);
+        
+        function abc()
+        {
+            document.querySelector("#banner").classList.remove("sad");
+            
+            var e=document.querySelector("#banner").classList;
+            console.log(e);
+        }
+        
+        
+        //classlist lenght
+        
+        var element;
+        document.querySelector("#banner").addEventListener("click",abc);
+        
+        function abc()
+        {
+            
+            
+            var e=document.getElementById("banner").classList.length;
+            console.log(e);
+        }
+        
+        //classlist item
+        document.querySelector("#banner").addEventListener("click",abc);
+        
+        function abc()
+        {
+         //   document.getElementById("banner").classList.toggle("xyx");
+            
+            var e=document.getElementById("banner").classList.item(1);
+            console.log(e);
+        }
+        
+        
+        //classlist contain
+        
+        
+        
+      var element;
+        document.querySelector("#banner").addEventListener("click",abc);
+        
+        function abc()
+        {
+         //   document.getElementById("banner").classList.toggle("xyx");
+            
+            var e=document.getElementById("banner").classList.contains("xyx");
+            console.log(e);
+        }
+        
+        
+        //traversal Method
+        
+        
+        
+        
+    var element;
+        element=document.getElementById("inner").parentElement;
+        console.log(element);
+    
+    
+    var element;
+        element=document.getElementById("inner").parentNode;
+        console.log(element);
+    
+    
+        
+    var element;
+        element=document.getElementById("outer").children;
+        console.log(element);
+        
+        
+        var element;
+        element=document.getElementById("outer").childNodes;
+        console.log(element);
+        
+        
+        
+    var element;
+        element=document.getElementById("inner").children[2].style.background="red";
+         element=document.getElementById("inner").children[2].innerHTML;
+        
+        console.log(element);
+        
+        var element;
+        element=document.getElementById("inner").firstElementChild;
+         
+        var element;
+        element=document.getElementById("inner").lastElementChild;
+         
+        var element;
+        element=document.getElementById("inner").nextElementSibling;
+        
+        var element;
+        element=document.getElementById("inner").previousElementSibling;
+        
+        
+        
+        // for writing Text and <P><H> etc
+        
+        
+    var element;
+        element=document.createElement("h3");
+        var tex=document.createTextNode("This is Mine Website");
+         var comm=document.createComment("This is Comment");
+        
+        console.log(element);
+        console.log(tex);
+        console.log(comm);
+        
+        
+        
+        //add text with element
+        
+        element.append(tex);
+        
+        //add this into website
+        
+        var creElement=document.createElement("h2");
+        var creText=document.createTextNode("This is Mine Website")
+        
+        creElement.append(creText);
+        
+        var g=document.getElementById("test").append(creElement);
+        console.log(g);
+        
+        
+    //insert before
+        
+        
+        var creElement=document.createElement("h2");
+        var creText=document.createTextNode("This is Mine Website")
+        
+        creElement.append(creText);
+        
+        var g=document.getElementById("test").append(creElement);
+        console.log(g);
+        
+        var target=document.getElementById("test");
+        target.insertBefore(creElement,target.childNodes[1]);
+        
+        var creE=document.createElement("h2");
+        var text=document.createTextNode("This is Mine");
+        
+      creE.append(text);
+        
+        
+        
+        //insertAdjancat
+        
+        
+        //beforeBegin
+        var element=document.createElement("h1");
+        var tex=document.createTextNode("This is cricket Website");
+         element.append(tex);
+        var t=document.getElementById("outer");
+        t.insertAdjacentElement("beforebegin",element);
+        
+        
+        //afterbegin
+        
+        var element=document.createElement("h1");
+        var tex=document.createTextNode("This is cricket Website");
+         element.append(tex);
+        var t=document.getElementById("outer");
+        t.insertAdjacentElement("afterbegin",element);
+        
+        //insertAdjancant HTML
+        
+        var ele =document.getElementById("outer");
+        var neElement="<h1>This is Professional Website</h1>";
+        ele.insertAdjacentHTML("afterend",neElement);
+        
+        //rePlace Child
+        
+        var element=document.createElement("li");
+        var text=document.createTextNode("Bu lure");
+        element.append(text);
+        
+        var target=document.getElementById("ul");
+        var oldelement=target.children[3];
+        target.replaceChild(element,oldelement);
+        
+        
+        //reMove Child
+        var target=document.getElementById("ul");
+        var oldelement=target.children[3];
+        
+        target.removeChild(oldelement);
+        
+        
+        
+        //copY oR Clone Child
+        var target=document.getElementById("ul").children[3];
+        var copyelement=target.cloneNode(true);
+        console.log(copyelement);
+        document.getElementById("ul2").append(copyelement);
+        
+        //contain
+        var element=document.getElementById("ul0");
+        var target=document.getElementById("ul2");
+         var find=element.contains(target);
+        console.log(find);
+        
+        
+        //hasAttribute
+        var element=document.getElementById("ul0");
+         var find=element.hasAttribute("id");
+        console.log(find);
+        
+        //haschildnode
+        var element=document.getElementById("ul0");
+         var find=element.hasChildNodes("id");
+        console.log(find);
+        
+        //equal node
+        var element1=document.getElementById("ul").children[0];
+        var element2=document.getElementById("ul2").children[1];
+        var equal=element1.isEqualNode(element2);
+        console.log(equal);
+        
+    </script>

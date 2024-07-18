@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Hello Java</title>
+ <script> 
+     x=0;
+    function abc3()
+     {
+         x++;
+         document.getElementById("gallery").innerHTML=x;
+         setTimeout("abc3()",1500);
+         if(x==11)
+         {
+             --x;
+        document.write("<h1 align='center"><a href='1.jpg' Download>Download File</h1></a>");    
+         }
+      }
+    </script>
+    </head>
+    <br>
+    <br>
+    
+    <h1 align="center" style="font-size: 70px;">File is Loading ...........</h1>
+    <h1 id="gallery" align="center" style="font-size: 170px;">0</h1>
+    
+<body onload="abc3()">
+    
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+ <head>
+ <title>Hello World </title>
+        
+    <script>
+    rollno=prompt("Enter Your Roll No");
+    stname=prompt("Enter Your Name");
+    English=prompt("Enter Your English Marks");
+    Urdu=prompt("Enter Your Urdu Marks");
+    Computer=prompt("Enter Your Computer Marks");
+    total=300;    
+    ob= eval(English)+eval(Urdu)+eval(Computer);
+    per=ob*100/total;
+    avg=ob/3; 
+    if(per>=33)
+        {
+            result="Pass";
+        }
+    else{
+        result="Fail";
+    }    
+    
+     if(per>=90)
+        {
+            grade="A";
+        }
+    else if(per>=80){
+        grade="B";
+    }    
+    
+     if(per>=70)
+        {
+            grade="C";
+        }
+    else {
+        grade="D";
+    } 
+     
+    confirm=confirm("Are You Sure To Check Your Result Card ! ");
+     </script>
+     </head>
+    
+    <body>
+   <script>
+ if(confirm == true){
+document.write('<h1 align="center"><font color="red">Result Card</font></h1><table border="1" width="400" align="center"><tr><td width="150">Roll No</td><td>' + rollno+'</td></tr><tr><td width="150">Name</td><td>' +
+stname + '</td></tr><tr><td width="150">English</td><td>' +
+English + '</td></tr><tr><td width="150">Urdu</td><td>' +
+Urdu + '</td></tr><tr><td width="150">Computer</td><td>' +
+ Computer + '</td></tr><tr><td width="150">Total Marks</td><td>' +              
+total + '</td></tr><tr><td width="150">Obtained Marks</td><td>' +
+ob + '</td></tr><tr><td width="150">Percentage</td><td>' +
+per + '</td></tr><tr><td width="150">Average</td><td>' +
+avg + '</td></tr><tr><td width="150">Pass/Fail</td><td>' +
+result + '</td></tr><tr><td width="150">Grade</td><td>' +
+grade + '</td></tr></table>');
+        
+ }
+
+else {
+    document.write('<h1 align="center" ><font color="green" size="32">Result Not Found</font></h1>');
+}       
+   </script></body>
+</html>

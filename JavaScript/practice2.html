@@ -1,0 +1,44 @@
+<html>
+<head>
+    
+    
+<link rel="stylesheet" href="practice2.css">    
+    
+    </head>
+<body>
+    
+    <div id="outer"> 
+        <h2>Outer</h2>
+    <div id="inner">
+    <h2>Inner</h2>
+    <div style="width: 20px; height: 10px; padding: 40px; margin-top: 50px; margin-bottom: -50px;
+                border: 1px solid green; background-color: gold;">A</div>
+    <div style="width: 20px; height: 10px; float:  inherit; padding: 40px; margin-top: -42px; margin-left:150px; margin-bottom: -50px;
+                border: 1px solid green; background-color: gold;">B</div>
+    <div style="width: 20px; height: 10px; float:  inherit; padding: 40px; margin-top: -42px; margin-left:300px; margin-bottom: -50px;
+                border: 1px solid green; background-color: gold;">C</div>    
+    <div style="width: 20px; height: 10px; float:  inherit; padding: 40px; margin-top: -40px; margin-left:450px; margin-bottom: -5px;
+                border: 1px solid green; background-color: gold;">D</div>
+    <div style="width: 20px; height: 10px; float:  inherit; padding: 40px; margin-top: -40px; margin-left:65px; margin-bottom: -10px;
+                border: 1px solid green; background-color: gold;">E</div>    
+        </div>
+    
+    <div id="appends"></div>
+    </div>
+    <script>
+
+        
+        ;
+        var tex="This Is Not Ordinary";
+        var ek=document.getElementById("outer").insertAdjacentText("afterbegin",tex);
+    </script>
+    
+    </body>
+
+    
+    
+</html>
+
+
+
+

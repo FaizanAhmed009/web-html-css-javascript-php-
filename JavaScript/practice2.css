@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    width: 70%;
+}
+#outer
+{
+
+    border: 1px solid Green;
+    text-align: left;
+    text-decoration: none;
+    background-color: darkkhaki;
+    padding: 40px;
+    width: 850px;
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 40px;
+    position: absolute;
+    margin-right: 90px;
+    
+}
+#inner
+{
+    border: 1px solid Green;
+    text-align: left;
+    text-decoration: none;
+    background-color: salmon;
+    padding: 20px;
+    margin: auto;
+  margin-right: -10px
+    margin-left: 50px;
+    position: relative;
+    float: left;
+    width: 800px;
+    
+}
+#appends
+{
+    border: 10px dotted yellow;
+    background-color: fuchsia;
+}

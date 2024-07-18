@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Hello Program</title>
+ <script>
+     x=0;
+     function next()
+     {
+         switch(x)
+  {
+      case 0:
+          x++;
+    document.getElementById("gallery").src="images/2.jpg";        break;
+          
+      case 1:
+          x++;
+    document.getElementById("gallery").src="images/02.jpg";        break;
+            case 2:
+          x++;
+    document.getElementById("gallery").src="images/03.jpg";        break;
+    
+          
+     }
+     }
+     
+     
+     function previous()
+     {
+         switch(x)
+  {
+      case 1:
+          x--;
+    document.getElementById("gallery").src="images/1.jpg";        break;
+          
+      case 2:
+          x--;
+    document.getElementById("gallery").src="images/2.jpg";        break;
+            case 3:
+          x--;
+    document.getElementById("gallery").src="images/02.jpg";        break;
+    
+          
+     }
+     }
+    </script>
+    </head>
+    
+    <body>
+        <center>        
+<img src="images/1.jpg" width="500" height="500" id="gallery" border="5">    
+            <br />
+    <input type="button" value="Previous" onclick="previous()">
+    
+    <input type="button" value="Next" onclick="next()">
+    
+    
+    </center>
+
+    
+   
+    
+    
+    
+    </body>
+</html>

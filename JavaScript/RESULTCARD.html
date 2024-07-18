@@ -1,0 +1,137 @@
+<html>
+ <head>
+ <title>Hello World </title>
+        
+    <script>
+    rollno=3432;
+    stname="Ali";
+    English=68;
+    Urdu=87;
+    Computer=90;
+    total=300;    
+    ob= English+Urdu+Computer;
+    per=ob*100/total;
+    avg=ob/3; 
+    if(per>=33)
+        {
+            result="Pass";
+        }
+    else{
+        result="Fail";
+    }    
+    
+     if(per>=90)
+        {
+            grade="A";
+        }
+    else if(per>=80){
+        grade="B";
+    }    
+    
+     if(per>=70)
+        {
+            grade="C";
+        }
+    else {
+        grade="D";
+    } 
+     
+     
+     </script>
+     </head>
+    
+    <body>
+    <h1 align="center"><font color="red">Result Card</font>
+        </h1> 
+        <table border="1" width="300" align="center">
+        <tr>
+        <td width="100">Roll No</td>
+        <td><script>
+        document.write(rollno);
+    </script></td>    
+            </tr>
+        
+        <tr>
+        <td width="100">Name</td>
+        <td>
+        
+    <script>
+        document.write(stname);
+    </script></td></tr>
+        
+        
+        
+        <tr>
+        <td width="100">English</td>
+        <td><script>
+        document.write(English);
+            </script></td>    
+            </tr>
+            
+            <tr>
+        <td width="100">Urdu</td>
+        <td><script>
+        document.write(Urdu);
+            </script></td>    
+            </tr>
+            
+            <tr>
+        <td width="100">Computer</td>
+        <td><script>
+        document.write(Computer);
+            </script></td>    
+            </tr>
+            
+            
+            <tr>
+        <td width="100">Total Marks</td>
+        <td><script>
+        document.write(total);
+            </script></td>    
+            </tr>
+            
+            <tr>
+        <td width="100">Obtained Marks</td>
+        <td><script>
+        document.write(ob);
+            </script></td>    
+            </tr>
+        
+        <tr>
+        <td width="100">Percentage</td>
+        <td><script>
+        document.write(per);
+            </script></td>    
+            </tr>
+        <tr>
+        <td width="100">Average</td>
+        <td><script>
+        document.write(avg);
+            </script></td>    
+            </tr> 
+        
+            
+        <tr>
+        <td width="100">Pass/Fail</td>
+        <td><script>
+        document.write(result);
+            </script>
+            </td>    
+            </tr> 
+        
+        <tr>
+        <td width="150">Grade</td>
+        <td><script>
+        document.write(grade);
+            </script></td>    
+            </tr> 
+        
+        
+        
+        </table>
+    <script>
+    
+        
+    </script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+    <head>
+   
+    
+    </head>
+    <style>
+   
+        .banner
+        {
+            width: 1500px;
+            height: 150px;
+            text-decoration-color: aqua;
+            text-decoration: none;
+            background-color: red;
+            text-align:center;
+            padding: 0px;
+            margin: 0px;
+            font-size: 50px;
+            
+        }
+        
+        
+    .xyx
+        {
+            background-color: forestgreen;
+        }
+    .wyc
+        {
+            width: 1500px;
+            height: 150px;
+            text-decoration-color: sienna;
+            text-decoration: none;
+            background-color: mediumturquoise;
+            text-align:center;
+            padding: 0px;
+            margin: 0px;
+            font-size: 80px;
+            
+        }
+    </style>
+     
+    <body>
+        
+             <ul id="ul">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>PineApple</li>         
+        </ul>
+        
+        <ul id="ul2">
+        <li>Karela</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        </ul>
+    
+    <script>
+        
+        var element1=document.getElementById("ul").children[0];
+        var element2=document.getElementById("ul2").children[1];
+        var equal=element1.isEqualNode(element2);
+        console.log(equal);
+        
+        
+        </script>
+    </body>
+</html>

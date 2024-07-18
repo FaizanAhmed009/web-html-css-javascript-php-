@@ -1,0 +1,56 @@
+<html>
+<body>
+    <script>
+    
+    var a=[18,20,24,19,10];
+        document.write(a+"<br><br>");
+        
+        var b=a.find(checkadult);
+        document.write("<b>The Find Function is : </b>");
+        document.write(b+"<br><br>");
+        
+        
+        var b=a.findIndex(checkadult);
+        document.write("<b>The Find Index Function is : </b>");
+        document.write(b+"<br><br>");
+        
+        
+        
+        var b=a.filter(checkadult);
+        document.write("<b>The Filter Function is : </b>");
+        document.write(b+"<br><br>");
+        
+        function checkadult(age)
+        {
+            return age>=18;
+        }
+        
+        
+        var c=["Faizan","Kamran","Bilal","Ali"];
+        
+        document.write(" <b>The Names are in Array : </b>"+c);
+        document.write("<br><br>");
+        document.write("<b>The Names are in String :   </b> ");
+        var d=c.toString();
+        document.write(d);
+        document.write("<br><br>");
+        
+        document.write("<b>The ToValue Function is  :   </b> ");
+        var d=c.valueOf();
+        document.write(d);
+    
+    
+        document.write("<br><br>");
+        
+        document.write("<b>The Fill Function is  :   </b> ");
+        var d=c.fill("Faizan");
+        document.write(d);
+    
+    document.write("<br><br>");
+    </script>
+    
+    
+    
+    </body>
+
+</html>
