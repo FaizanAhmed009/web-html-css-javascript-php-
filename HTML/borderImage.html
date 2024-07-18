@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <style>
+            
+        #tr
+            {
+                border: 30px solid green;
+                width: 400px;
+                height: 450px;
+                text-align: justify;
+                padding: 20px;
+                margin: 40px;
+                background: firebrick;
+            
+                border-image: url(border3.jpg);
+                border-image-slice:40;
+                border-image-repeat:round;
+                border-image-width: 45px;
+                border-image-outset: 20px;
+                
+            }
+            #rt
+            {
+             color: deeppink;
+                font-size: 30px;
+                display: inline-block;
+                
+            }
+            a[title]
+            {
+                text-decoration-line: none;
+                color: forestgreen;
+            }
+            input[alt=""]
+            {
+                border: 1px solid yellow;
+            }
+            #rt p
+            {
+                color: darkviolet;
+            }
+            p:first-child{
+                color: green;
+                
+            }
+            p:last-child
+            {
+                color: deeppink;
+            }
+            li:nth-of-type(3){
+                color: forestgreen;
+                border:1px solid green;
+                width: 35px;
+            }
+            p:only-of-type{
+                color: bisque;
+                
+            }
+            p:not(scan)
+            {
+                color: aliceblue;
+            }
+            .form-group{
+                display: block;
+                border-width: 5px;
+                overflow: hidden;
+            }
+            .form-group form-check
+            {
+                border-width: 5px;
+            }
+            .form-text text-muted{
+              border-width: 0%;  
+                border-width: 5px;
+            }
+            input[type="email"]
+            {
+             width: 150px;   
+            }
+            p::first-letter
+            {
+            color: blue;
+            
+                font-weight: 1900;
+                
+            }
+            p::selection{
+                color:darkorange;}
+        </style>
+    </head>
+    <body>
+        <div id="tr"><p>N jksandsa <scan>jsa skaj</scan> ksa sa sasa asa xz kjsaa amsm csajj  sa skaa sa aksa sa sa cnsa</p> <p>cnmsaa cmsa kj cfel fwqk; ekw enek3le ew .ekw e fe   e eh eoih eoweu hewiue eweoie</p> <p>owe wi ewqo jqwo eowejwoi iqwo ewqoi eowiqej wqoie wo jowi owo ow wo woq wo e 3u</p><p> ewqh ewqoih ewqohe woiq hw quqwo  iwosak slasalsa dwa.</p></div>
+        <div id="rt">
+            <a href="#" title="none">Hello</a>
+            <br>
+            <input type="date" alt="" value="Male"><p>Jello</p>
+        </div>
+        <ul>
+        <li>Hello</li>
+        <li>Gello</li>
+        <li>Jello</li>
+        <li>Tello</li>
+        
+        <ul>
+        <li>Nello</li>
+        <li>Mello</li>
+        <li>Pello</li>
+        <li>Qello</li>
+        
+        </ul>
+        </ul>
+        <br>
+        
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <div 6></div>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled value="javid*********.com" placeholder="Enter email">
+     </div> <br>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" min="1" id="exampleInputPassword1" placeholder="Enter Your Password"  >
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        
+    </body>
+</html>

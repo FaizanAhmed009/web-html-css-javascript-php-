@@ -1,0 +1,81 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="all.css">
+    </head>
+    <style>
+        *{
+            width: 1000px;
+        }
+        body{
+            counter-reset: mycount 0;
+            
+        }
+    h1
+    {
+        color: green;
+        margin-left:20px;
+            font-size: 35px;
+        }
+        h2::before{
+            content: "Chapter " counter(mycount) " : ";
+            counter-increment: mycount 1;
+        }
+        h2{
+        
+        margin-left:20px;
+        font-weight: 900;
+            font-size: 35px;
+            margin-bottom: -30px;
+        }
+        p{
+       margin-bottom: -50px;
+            margin-left:20px;
+            font-size: 20px;
+            
+        }
+        #par
+        {
+            width: 550px;
+            border: 2px solid green;
+            margin: 50px 20px;
+ 
+            
+            
+            display: flow-root;
+        }
+        #chi
+        {
+            height: 100px;
+            width: 100px;
+            background: red;
+            float: left;
+            
+        }
+        
+    </style>
+    <body>
+        <div id="h">
+                 <h1><i class="fab fa-facebook-f"></i>Hello Yahoo Baba</h1>
+        <h2 >lorem ipusm</h2>
+        
+        <br><br><p>
+        Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends of the efficiency of the hash function used.</p>
+        <br><br>
+    
+    <h2>lorem ipusm ante</h2>
+        
+        <br><br><p>
+        Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends of the efficiency of the hash function used.</p>
+        <br><br>
+
+        <h2>Korem ipusm</h2>
+        
+        <br><br><p>
+        Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends of the efficiency of the hash function used.</p>
+        <br><br>
+    </div>
+        <div id="par">
+            <div id="chi"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,252 @@
+<html>
+    
+    <style>
+        #Jon
+        {
+            width: 500px;
+            background:white; 
+            margin: 150px 0px 0px 150px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 150px repeat(2,1fr);
+            grid-template-rows: 1.5fr 1.5fr;
+            grid-gap: 20px 30px;
+            grid-auto-flow: row;
+            grid-auto-columns: 150px;
+            grid-auto-rows: 3fr;
+            
+        }
+         #Con
+        {
+            width: 450px;
+            background:#eee; 
+            margin: 150px 0px 0px 150px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 150px repeat(2,1fr);
+            grid-template-rows: 1.5fr 1.5fr;
+            grid-gap: 20px 30px;
+            grid-auto-flow: column;
+            grid-auto-columns: 0.5fr;
+            grid-auto-rows: 0.5fr;
+            justify-content: center;
+        }
+        
+         #Tons
+        {
+            width: 450px;
+            background:#eee; 
+            margin: 150px 0px 0px 150px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 150px repeat(2,1fr);
+            grid-template-rows: 1.5fr 1.5fr;
+            grid-gap: 20px 30px;
+        }
+         #Mons
+        {
+            width: 450px;
+            background:#eee; 
+            margin: 150px 0px 0px 150px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: 150px repeat(2,1fr);
+            grid-template-rows: 1.5fr 1.5fr;
+            grid-gap: 20px 30px;
+        }
+    
+        #con1{
+        background-color: fuchsia;   
+        grid-row: 2/1;
+            grid-column: 2/2;
+        }
+        
+        #con2{
+        background-color:forestgreen;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        
+        #con3{
+        background-color:black;        
+        }
+        
+        #con4{
+        background-color:indigo;
+                    
+        }
+        
+        #con5{
+        background-color:peru;
+        }
+        
+        #con6{
+        background-color:darkgrey;
+        }
+        #Con1{
+        background-color: fuchsia;   
+      
+            grid-row: 2/1;
+            grid-column: 2/2;
+        }
+        
+        #Con2{
+        background-color:forestgreen;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        
+        #Con3{
+        background-color:dodgerblue;        
+        }
+        
+        #Con4{
+        background-color:blanchedalmond;
+                    
+        }
+        
+        #Con5{
+        background-color:darkviolet;
+        }
+        
+        #Con6{
+        background-color:darksalmon;
+      
+            
+        }
+       
+        #Cons1{
+        background-color:fuchsia;
+            order: 3;
+        
+        }
+        
+        #Cons2{
+        background-color:forestgreen;
+           order: 5;
+        
+        }
+        
+        #Cons3{
+        background-color:dodgerblue;        
+        }
+        
+        #Cons4{
+        background-color:blanchedalmond;
+      order: 2;
+                      
+        }
+        
+        #Cons5{
+        background-color:darkviolet;
+      order: 1;
+        }
+        
+        #Cons6{
+        background-color:darksalmon;
+      }
+            
+        #Cos1{
+        background-color:fuchsia;
+            order: 3;
+        
+        }
+        
+        #Cos2{
+        background-color:forestgreen;
+           order: 5;
+        a
+        }
+        
+        #Cos3{
+         
+           display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        #Cos3 > div
+        {
+            background: white;
+            color: rebeccapurple;
+            padding: 10px;
+        }
+        #Cos4{
+        background-color:blanchedalmond;
+      order: 2;
+                      
+        }
+        
+        #Cos5{
+        background-color:darkviolet;
+      order: 1;
+        }
+        
+        #Cos6{
+        background-color:darksalmon;
+      }
+            
+        
+        
+    </style>
+    
+<body>
+    
+        <h1>Simple and Auto Grids</h1>
+    <div id="Jon">
+<div id="con1">Item No 1 </div>
+<div id="con2">Item No 2 </div>    
+<div id="con3">Item No 3 </div>    
+<div id="con4">Item No 4 </div>
+<div id="con5">Item No 5 </div>
+<div id="con6">Item No 6 </div>   
+        
+<div id="con5">Item No 7 </div>
+<div id="con6">Item No 8 </div>   
+        </div>
+    <br>
+    
+        <h1>Horizontal and Vertical Grids</h1>
+    <div id="Con">
+<div id="Con1">Item No 1 </div>
+<div id="Con2">Item No 2 </div>    
+<div id="Con3">Item No 3 </div>    
+<div id="Con4">Item No 4 </div>
+<div id="Con5">Item No 5 </div>
+<div id="Con6">Item No 6 </div>   
+        
+<div id="Con8">Item No 7 </div>
+<div id="Con9">Item No 8 </div>   
+        </div>
+    
+    <br>
+    
+        <h1>Order Grids</h1>
+    <div id="Tons">
+<div id="Cons1">Item No 1 </div>
+<div id="Cons2">Item No 2 </div>    
+<div id="Cons3">Item No 3 </div>    
+<div id="Cons4">Item No 4 </div>
+<div id="Cons5">Item No 5 </div>
+<div id="Cons6">Item No 6 </div>   
+        
+    </div>
+        
+    
+        <h1>Nested Grids</h1>
+    <div id="Mons">
+<div id="Cos1">Item No 1 </div>
+<div id="Cos2">Item No 2 </div>    
+<div id="Cos3">
+        <div id="Conss4">SubItem No 1 </div>
+<div id="Conss5">SubItem No 2 </div>    
+<div id="Conss6">SubItem No 3  </div>
+        
+        </div>
+        
+        <div id="Cos4">Item No 1 </div>
+<div id="Cos5">Item No 2 </div>    
+        <div id="Cos6"></div>
+        
+       </div> 
+    
+        </body>
+</html>

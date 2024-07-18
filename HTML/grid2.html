@@ -1,0 +1,118 @@
+<html>
+    
+    <style> 
+        #con
+        {
+            width: 500px;
+            background:#eee; 
+            margin: 150px 0px 0px 150px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 120px 60px 100px 400px;
+            grid-gap: 20px 30px;
+            
+        }
+    
+        #con1{
+        background-color: fuchsia;   
+        grid-row: 1/2;
+            grid-column: 1/ -1;
+        }
+        
+        #con2{
+        background-color:forestgreen;
+            grid-row: 2/3;
+            grid-column: 1/ -1;
+        }
+        
+        #con3{
+        background-color:dodgerblue;        
+        }
+        
+        #con4{
+        background-color:blanchedalmond;
+                    
+        }
+        
+        #con5{
+        background-color:darkviolet;
+         grid-row: 3/5;    
+        }
+        
+        #con6{
+        background-color:darksalmon;
+        grid-row: 4/5;
+            grid-column: 1/ 2;
+            
+        }
+       //Second Method
+        
+        #con
+        {
+            width: 500px;
+            background:#eee; 
+            margin: 150px 0px 0px 150px;
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 120px 60px 100px 400px;
+            grid-gap: 20px 30px;
+            grid-template-areas: "header header header"
+                                 "menu menu menu"
+                                 "box1 box2 slideBar"
+                                "Content Content SlideBar";
+                               
+                
+        }
+    
+        #con1{
+        background-color: fuchsia;   
+        grid-area:header;
+        }
+        
+        #con2{
+        background-color:forestgreen;
+        grid-area:menu;
+  
+        }
+        #con3{
+        background-color:dodgerblue;        
+          
+        grid-area:box1;
+        }
+        
+        #con4{
+        background-color:blanchedalmond;
+          
+        grid-area:box2;            
+        }
+        
+        #con5{
+        background-color:darkviolet;
+          
+        grid-area:SlideBar;  
+        }
+        
+        #con6{
+        background-color:darksalmon;
+          
+        grid-area: Content;
+            
+        }
+        
+        
+    </style>
+    
+<body>
+    <div id="con"> 
+<div id="con1">Header </div>
+<div id="con2">Menu</div>    
+<div id="con3">Box 1</div>    
+<div id="con4">box 2</div>
+<div id="con5">Slide Bar</div>
+<div id="con6">Content</div>    
+        </div>
+        
+        </body>
+</html>
