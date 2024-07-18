@@ -1,0 +1,117 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#firstDiv
+{
+   height: 100vh;
+    background-image: url("download%20(1).jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+#SecondDiv 
+
+{
+    background-color:rebeccapurple;
+    height: 120px;
+    text-align: center;
+    
+}
+#SecondDiv a
+{
+  margin-top: 40px;
+    font-weight: bold;
+   text-decoration-line: none;
+    color: #eee;
+    margin-left: 90px;
+    display: inline-block;
+    transform: translate(300px);
+    margin-top: 50px;
+    font-size: 19px;
+    
+}
+#SecondDiv a:hover
+{
+    color: aqua;
+   
+}
+#sp
+{
+  margin-top: 40px;
+    transform: translate(65px);
+    display: inline-block;
+    color: #eee;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1.px;
+    left: 15px;
+}
+#p0{
+    color: aliceblue;
+    margin-top: 200px;
+    margin-left: 650px;
+    font-size: 40px;
+}
+#p1{
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 550px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#but
+{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 105px;
+    margin-left: 550px;
+}
+
+#buts
+{
+    padding: 5px;
+    background-color: blue;
+    color: aliceblue;
+    box-sizing: border-box;
+    width: 105px;
+    margin-left: 10px;
+    
+    transition: all 1s ease;
+}
+
+
+#qs{
+    color: aliceblue;
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    top: 62%;
+    left: 36%;
+    font-size: 20px;
+}
+
+
+.con:after
+{
+    content: '';
+    animation:sample 10s infinite linear;  
+}
+@keyframes sample
+{
+    0%{content: "Lahore";}
+    20%{content: "Karachi";}
+    40%{content: "Gujrat";}
+    60%{content: "Quetta";}
+    80%{content: "Pindi";}
+    100%{content: "Islambad";}
+}
+
+
+
+
+
